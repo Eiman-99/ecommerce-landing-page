@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<header class="container mt-4">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid align-items-center">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" alt="Logo">
+      </a>
+      <form class="d-flex align-items-center ms-4 flex-grow-1 nav-form ps-3 rounded-1 d-none d-md-flex" style="max-width: 500px;">
+        <div class="d-flex align-items-center border-end pe-3">
+          <span class="me-1">All</span>
+          <img src="assets/images/Icon.png" alt="" style="width: 10px;">
+        </div>
+        
+        <input class="form-control border-0" type="search" placeholder="Search for items..." aria-label="Search" />
+
+        <button class="btn" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRight" aria-controls="navbarRight" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarRight">
+        <ul class="navbar-nav align-items-center gap-3">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle d-flex align-items-center location-dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="assets/images/location.png" alt="" class="me-1"> Your Location
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Location 1</a></li>
+            <li><a class="dropdown-item" href="#">Location 2</a></li>
+          </ul>
+        </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="#">
+              <img src="assets/images/fav.png" class="me-1" alt=""> Wishlist
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="#">
+              <img src="assets/images/cart.png" class="me-1" alt=""> Cart
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="#">
+              <img src="assets/images/profile.png" class="me-1" alt=""> Account
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="buttons mt-4 py-2">
+  <div class="container">
+    <div class="d-flex d-md-none text-center justify-content-around">
+      <button type="button" class="btn px-4 border-bottom-sm fw-semibold">Home</button>
+      <button type="button" class="btn px-4 txt-muted fw-semibold">Shop</button>
+    </div>
+
+    <div class="d-none d-md-flex flex-wrap align-items-center">
+      <button type="button" class="btn btn-accent btn-sm me-5">
+        <img src="assets/images/categories.png" class="me-1 mb-1" alt=""> Browse All Categories
+      </button>
+      <button type="button" class="btn me-4">Offer</button>
+      <button type="button" class="btn me-4">Home</button>
+      <button type="button" class="btn me-4">Shop</button>
+      <button type="button" class="btn me-4">Vendors</button>
+      <button type="button" class="btn me-4">Mega Menu</button>
+      <button type="button" class="btn me-4">Pages</button>
+      <button type="button" class="btn me-4">Contact</button>
+    </div>
+  </div>
+</section>
+
+
+<section class="promotional-banner container mt-4">
+  <div class="row">
+    <!-- Sidebar Left -->
+    <div class="col-lg-3">
+      <!-- Category Box -->
+      <div class="category card mb-4 px-3 rounded-4 border-0">
+        <div class="card-body">
+          <h5 class="card-title txt-primary mb-4 pb-3">Category</h5>
+          <ul class="list-unstyled">
+      <li class="d-flex justify-content-between align-items-center mb-2">
+    <div class="d-flex align-items-center txt-primary">
+      <img src="assets/images/category-1.svg.png" alt="" class="me-2">
+      Food
+    </div>
+    <h6 class="txt-primary bg-accent-light rounded-5 px-3 py-1">3</h6>
+  </li>
+
+  <li class="d-flex justify-content-between align-items-center mb-2">
+    <div class="d-flex align-items-center txt-primary">
+      <img src="assets/images/category-2.svg fill.png" alt="" class="me-2">
+      Oil
+    </div>
+    <h6 class="txt-primary bg-accent-light rounded-5 px-3 py-1">4</h6>
+  </li>
+
+  <li class="d-flex justify-content-between align-items-center mb-2">
+    <div class="d-flex align-items-center txt-primary">
+      <img src="assets/images/category-3.svg.png" alt="" class="me-2">
+      Clothes
+    </div>
+    <h6 class="txt-primary bg-accent-light rounded-5 px-3 py-1">5</h6>
+  </li>
+
+  <li class="d-flex justify-content-between align-items-center mb-2">
+    <div class="d-flex align-items-center txt-primary">
+      <img src="assets/images/category-4.svg.png" alt="" class="me-2">
+      Baking material
+    </div>
+    <h6 class="txt-primary bg-accent-light rounded-5 px-3 py-1">8</h6>
+  </li>
+
+  <li class="d-flex justify-content-between align-items-center mb-2">
+    <div class="d-flex align-items-center txt-primary">
+      <img src="assets/images/category-5.svg fill.png" alt="" class="me-2">
+      Fresh Fruit
+    </div>
+    <h6 class="txt-primary bg-accent-light rounded-5 px-3 py-1">10</h6>
+  </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- New Products Box -->
+      <div class="new-products card mb-4 px-3 rounded-4 border-0">
+        <div class="card-body">
+          <h5 class="card-title txt-primary mb-4 pb-3">New products</h5>
+          <li class="d-flex align-items-center mb-2 pb-3">
+          <img src="assets/images/thumbnail-3.jpg.png" alt="" class="me-2">
+          <div class="d-flex flex-column align-items-start txt-primary ms-2">
+          <h6 class="txt-accent">Mango juice</h6>
+          <small>$99.50</small>
+          <i class="fa-solid fa-star mt-2"></i>
+        </div>
+        </li>
+          <li class="d-flex align-items-center mb-2 pb-3">
+          <img src="assets/images/thumbnail-4.jpg.png" alt="" class="me-2">
+          <div class="d-flex flex-column align-items-start txt-primary ms-2">
+          <h6 class="txt-accent">Ripe banana</h6>
+          <small>$89.50</small>
+          <i class="fa-solid fa-star mt-2"></i>
+        </div>
+        </li>
+          <li class="d-flex align-items-center mb-2 pb-3">
+          <img src="assets/images/thumbnail-5.jpg.png" alt="" class="me-2">
+          <div class="d-flex flex-column align-items-start txt-primary ms-2">
+          <h6 class="txt-accent">Watermelon</h6>
+          <small>$25</small>
+          <i class="fa-solid fa-star mt-2"></i>
+        </div>
+        </li>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner col-lg-9">
+      <div class="banner-wrapper card mb-4 rounded-4 p-4 border-0">
+        <div class="card-body d-flex flex-column flex-md-row align-items-center justify-content-between">
+          <div><h2>Don't miss the incredible <br>promotional deals</h2>
+            <p class="my-4">Sign up for the daily newsletter</p>
+            <form class="d-flex mb-4">
+              <div class="form-wrapper rounded-5">
+              <i class="fa-solid fa-paper-plane ps-3"></i>
+              <input type="email" class="border-0 ms-2" placeholder="Your email address">
+              <button class="btn btn-accent rounded-5 py-2">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-md-flex justify-content-between d-none">
+        <h4 class="txt-primary">Popular Products</h4>
+        <ul class="nav">
+        <li class="me-4"><a class="txt-accent fw-semibold" href="#">All</a></li>
+        <li class="me-4"><a class="txt-primary fw-semibold" href="#">Milk & Yogurt</a></li>
+        <li class="me-4"><a class="txt-primary fw-semibold" href="#">Coffee & Tea</a></li>
+        <li class="me-4"><a class="txt-primary fw-semibold" href="#">Pet Food</a></li>
+        <li class="me-4"><a class="txt-primary fw-semibold" href="#">Vegetables</a></li>
+        <li class="me-4"><a class="txt-primary fw-semibold" href="#">Fruits</a></li>
+      </ul>
+      </div>
+
+<div class="container my-3">
+
+  <!-- Product Cards Row -->
+  <div class="popular-products row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+  <div class="col">
+    <div class="card position-relative h-100">
+      <span class="position-absolute top-0 start-0 tag-hot tag">Hot</span>
+      <img src="assets/images/product-1-1.jpg" class="mt-4 mx-auto" alt="...">
+      <div class="card-body text-start">
+        <p class="product-name mb-2 txt-muted fw-semibold">Snack</p>
+        <h6 class="fw-bold txt-primary">Seeds of Change Organic Quinoa</h6>
+        <i class="fa-solid fa-star mt-2"></i><span class="txt-muted ms-4 rate">(4.0)</span>
+        <small class="text-muted d-block my-1">By <span class="txt-accent fw-semibold">NestFood</span></small>
+        <div class="mb-1">
+          <span class="text-success fw-bold">$28.85</span>
+          <span class="text-decoration-line-through text-muted ms-1">$32.8</span>
+          <button class="btn bg-accent-light btn-sm ms-2 txt-accent fw-semibold"><img src="assets/images/cart-icon.png" class="mb-1 me-1" alt="">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card position-relative h-100">
+      <span class="position-absolute top-0 start-0 tag-sale tag">Sale</span>
+      <img src="assets/images/product-2-1.jpg" class="mt-4 mx-auto" alt="...">
+      <div class="card-body text-start">
+        <p class="product-name mb-2 txt-muted fw-semibold">Hodo Foods</p>
+        <h6 class="fw-bold txt-primary">All Natural Italian-Style Chicken Meatballs</h6>
+        <i class="fa-solid fa-star mt-2"></i><span class="txt-muted ms-4 rate">(4.0)</span>
+        <small class="text-muted d-block my-1">By <span class="txt-accent fw-semibold">NestFood</span></small>
+        <div class="mb-1">
+          <span class="text-success fw-bold">$28.85</span>
+          <span class="text-decoration-line-through text-muted ms-1">$32.8</span>
+          <button class="btn bg-accent-light btn-sm ms-2 txt-accent fw-semibold"><img src="assets/images/cart-icon.png" class="mb-1 me-1" alt="">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card position-relative h-100">
+      <span class="position-absolute top-0 start-0 tag-new tag">New</span>
+      <img src="assets/images/product-3-1.jpg" class="mt-4 mx-auto" alt="...">
+      <div class="card-body text-start ">
+        <p class="product-name mb-2 txt-muted fw-semibold">Snack</p>
+        <h6 class="fw-bold txt-primary">Angie’s Boomchickapop Sweet & Salty</h6>
+        <i class="fa-solid fa-star mt-2"></i><span class="txt-muted ms-4 rate">(4.0)</span>
+        <small class="text-muted d-block my-1">By <span class="txt-accent fw-semibold">NestFood</span></small>
+        <div class="mb-1">
+          <span class="text-success fw-bold">$28.85</span>
+          <span class="text-decoration-line-through text-muted ms-1">$32.8</span>
+          <button class="btn bg-accent-light btn-sm ms-2 txt-accent fw-semibold"><img src="assets/images/cart-icon.png" class="mb-1 me-1" alt="">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card position-relative h-100">
+      <span class="position-absolute top-0 start-0 tag-discount tag">-14%</span>
+      <img src="assets/images/product-5-1.jpg" class="mt-4 mx-auto" alt="...">
+      <div class="card-body text-start">
+        <p class="product-name mb-2 txt-muted fw-semibold">Pet Foods</p>
+        <h6 class="fw-bold txt-primary">Foster Farms Takeout Crispy Classic</h6>
+        <i class="fa-solid fa-star mt-2"></i><span class="txt-muted ms-4 rate">(4.0)</span>
+        <small class="text-muted d-block my-1">By <span class="txt-accent fw-semibold">NestFood</span></small>
+        <div class="mb-1">
+          <span class="text-success fw-bold">$28.85</span>
+          <span class="text-decoration-line-through text-muted ms-1">$32.8</span>
+          <button class="btn bg-accent-light btn-sm ms-2 txt-accent fw-semibold"><img src="assets/images/cart-icon.png" class="mb-1 me-1" alt="">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+
+  <!-- Banner Row -->
+  <div class="shop-now row g-4 mt-2">
+
+  <div class="col-md-4">
+    <div class="banner-1 banner py-5 px-4 rounded shadow-sm h-100 d-flex flex-column justify-content-between align-items-start">
+      <h6>Everyday Fresh & <br>
+          Clean with Our <br>
+          Products</h6>
+      <button class="btn btn-accent btn-sm mt-2 ">Shop Now</button>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="banner-2 banner py-5 px-4 rounded shadow-sm h-100 d-flex flex-column justify-content-between align-items-start">
+      <h6>Make your Breakfast <br>
+          Healthy and Easy</h6>
+      <button class="btn btn-accent btn-sm">Shop Now</button>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="banner-3 banner py-5 px-4 rounded shadow-sm h-100 d-flex flex-column justify-content-between align-items-start">
+      <h6>Everyday Fresh & <br>
+          Clean with Our <br>
+          Products</h6>
+      <button class="btn btn-accent btn-sm">Shop Now</button>
+    </div>
+  </div>
+
+</div>
+
+</div>
+    </div>
+  </div>
+</section>
+
+<section class="daily-shopping">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+              <div class="daily-shopping-wrapper card mb-4 rounded-4 p-4 border-0">
+        <div class="card-body d-flex flex-column flex-md-row align-items-center justify-content-between">
+          <div><h2>Stay home & get your daily <br> needs from our shop</h2>
+            <p class="my-4 txt-light">Start You'r Daily Shopping with <span class="txt-accent">Nest Mart</span></p>
+           <form class="d-flex mb-4">
+              <div class="form-wrapper rounded-5">
+              <i class="fa-solid fa-paper-plane ps-3"></i>
+              <input type="email" class="border-0 ms-2" placeholder="Your email address">
+              <button class="btn btn-accent rounded-5 py-2">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="pt-5 pb-2 mt-3">
+  <div class="container">
+    <div class="row text-muted">
+      <div class="col-6 col-md-2">
+        <img src="assets/images/logo.png" alt="Logo">
+        <p class="mt-3 txt-primary">Awesome grocery store website template</p>
+        <p class="txt-primary"><i class="bi bi-geo-alt txt-accent me-2"></i> Address: 5171 W Campbell Ave undefined Kent, Utah 53127 United States</p>
+        <p class="txt-primary"><i class="bi bi-headset txt-accent me-2"></i> Call Us:(+91) - 540-025-124553</p>
+        <p class="txt-primary"><i class="bi bi-envelope txt-accent me-2"></i> Email:sale@Nest.com</p>
+        <p class="txt-primary"><i class="bi bi-clock txt-accent me-2"></i> Hours:10:00 - 18:00, Mon - Sat</p>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 class="fw-bold txt-primary mb-3">Company</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="txt-primary">About Us</a></li>
+          <li><a href="#" class="txt-primary">Delivery Information</a></li>
+          <li><a href="#" class="txt-primary">Privacy Policy</a></li>
+          <li><a href="#" class="txt-primary">Terms & Conditions</a></li>
+          <li><a href="#" class="txt-primary">Contact Us</a></li>
+          <li><a href="#" class="txt-primary">Support Center</a></li>
+          <li><a href="#" class="txt-primary">Careers</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 class="fw-bold txt-primary mb-3">Account</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="txt-primary">Sign In</a></li>
+          <li><a href="#" class="txt-primary">View Cart</a></li>
+          <li><a href="#" class="txt-primary">My Wishlist</a></li>
+          <li><a href="#" class="txt-primary">Track My Order</a></li>
+          <li><a href="#" class="txt-primary">Help Ticket</a></li>
+          <li><a href="#" class="txt-primary">Shipping Details</a></li>
+          <li><a href="#" class="txt-primary">Compare products</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 class="fw-bold txt-primary mb-3">Corporate</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="txt-primary">Become a Vendor</a></li>
+          <li><a href="#" class="txt-primary">Affiliate Program</a></li>
+          <li><a href="#" class="txt-primary">Farm Business</a></li>
+          <li><a href="#" class="txt-primary">Farm Careers</a></li>
+          <li><a href="#" class="txt-primary">Our Suppliers</a></li>
+          <li><a href="#" class="txt-primary">Accessibility</a></li>
+          <li><a href="#" class="txt-primary">Promotions</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 class="fw-bold txt-primary mb-3">Popular</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="txt-primary">Milk & Flavoured Milk</a></li>
+          <li><a href="#" class="txt-primary">Butter and Margarine</a></li>
+          <li><a href="#" class="txt-primary">Eggs Substitutes</a></li>
+          <li><a href="#" class="txt-primary">Marmalades</a></li>
+          <li><a href="#" class="txt-primary">Sour Cream and Dips</a></li>
+          <li><a href="#" class="txt-primary">Tea & Kombucha</a></li>
+          <li><a href="#" class="txt-primary">Cheese</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 class="fw-bold txt-primary mb-3">Install App</h6>
+        <a href="#"><img src="assets/images/app-store.jpg" alt="App Store" class="mb-2 img-fluid"></a>
+        <a href="#"><img src="assets/images/google-play.jpg" alt="Google Play" class="mb-2 img-fluid"></a>
+        <p class="mt-2 small">Secured Payment Gateways</p>
+        <div class="d-flex gap-2">
+          <a href="#"><i class="bi bi-facebook txt-accent"></i></a>
+          <a href="#"><i class="bi bi-twitter txt-accent"></i></a>
+          <a href="#"><i class="bi bi-instagram txt-accent"></i></a>
+          <a href="#"><i class="bi bi-pinterest txt-accent"></i></a>
+          <a href="#"><i class="bi bi-youtube txt-accent"></i></a>
+        </div>
+        <p class="mt-2 small">Up to 15% discount on your first subscribe</p>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row text-muted small mb-5">
+      <div class="col-md-6">
+        <p>© 2022, <a href="#" class="txt-accent">Nest</a> - HTML Ecommerce Template</p>
+      </div>
+      <div class="col-md-3 d-flex align-items-center">
+        <i class="bi bi-telephone me-2 text-muted"></i>
+        <div>
+          <div class="fw-bold txt-accent">01234567</div>
+          <div class="small">Working: 8:00 - 22:00</div>
+        </div>
+      </div>
+      <div class="col-md-3 d-flex align-items-center">
+        <i class="bi bi-telephone me-2 text-muted"></i>
+        <div>
+          <div class="fw-bold txt-accent">01234567</div>
+          <div class="small">24/7 Support Center</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="https://kit.fontawesome.com/a7d9ff873d.js" crossorigin="anonymous"></script>
+</body>
+</html>

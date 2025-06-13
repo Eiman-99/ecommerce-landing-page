@@ -1,0 +1,332 @@
+//  Variables
+$color-text-primary: #253D4E;
+$color-text-secondary: #6c757d;
+$color-text-light: #7E7E7E;
+$color-text-muted: #adb5bd;
+$color-text-accent: #3BB77E;
+
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 1.5rem;
+$font-size-xxl: 2rem;
+
+$bg-white: #ffffff;
+$bg-light: #f8f9fa;
+$bg-dark: #212529;
+$bg-muted: #ECECEC;
+$bg-accent: #3BB77E;
+$bg-accent-light: #BCE3C9;
+
+//  Mixins
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+@mixin text-color($color) {
+  color: $color;
+}
+
+@mixin bg-color($color) {
+  background: $color;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin box-shadow($color: rgba(0, 0, 0, 0.1), $x: 0, $y: 2px, $blur: 10px) {
+  box-shadow: $x $y $blur $color;
+}
+
+@mixin tag-style($bg-color) {
+  @include bg-color($bg-color);
+  color: #fff;
+  padding: 0.4rem 1.5rem;
+  border-radius: 15px 0 20px 0;
+}
+
+//  Base
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+//  Utility Classes
+.txt-primary   { @include text-color($color-text-primary); }
+.txt-accent    { @include text-color($color-text-accent); }
+.txt-muted     { @include text-color($color-text-muted); }
+.txt-light     { @include text-color($color-text-light); }
+.bg-accent-light { @include bg-color($bg-accent-light); }
+
+//  Nav Form
+.nav-form {
+  border: 1px solid $bg-accent;
+  height: 45px;
+  @include font-size(14px);
+
+  input {
+    @include font-size(14px);
+  }
+
+  p img {
+    width: 20px;
+    height: 20px;
+  }
+
+  span {
+    @include text-color($color-text-primary);
+    font-weight: 600;
+  }
+}
+
+nav {
+  li img {
+    width: 20px !important;
+  }
+
+  a {
+    @include text-color($color-text-light);
+  }
+}
+
+//  Location Dropdown
+.location-dropdown {
+  @include bg-color($bg-white);
+  border-radius: 10px;
+  @include box-shadow();
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  min-width: 180px;
+  padding: 0;
+  @include font-size(14px);
+  color: $bg-accent !important;
+
+  img {
+    width: 15px !important;
+  }
+}
+
+.buttons {
+  border: 1px solid $bg-muted;
+}
+
+//  Buttons
+.btn-accent {
+  @include bg-color($bg-accent);
+  color: #fff;
+
+  &:hover {
+    background: $bg-accent !important;
+    color: #fff !important;
+  }
+}
+
+//  Banner Wrapper
+.banner-wrapper {
+  background: url('../assets/images/Tabpanel.png') no-repeat center center / cover;
+
+  h2 {
+    @include font-size(3rem);
+    @include text-color($color-text-primary);
+    @media (max-width: 576px) {
+    @include font-size(2rem);
+  }
+  }
+
+  p {
+    @include text-color($color-text-light);
+    font-weight: 500;
+  }
+
+  .form-wrapper {
+  align-items: center;
+  padding: 0.7rem 0;
+  width: 70%;
+  position: relative;
+  @include bg-color($bg-white);
+
+  i {
+    @include text-color($color-text-light);
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
+}
+
+// Daily Shopping
+.daily-shopping-wrapper {
+  background: url('../assets/images/Footer.png') no-repeat center center / cover;
+
+   .form-wrapper {
+   align-items: center;
+  padding: 0.7rem 0;
+  width: 70%;
+  position: relative;
+  @include bg-color($bg-white);
+
+  i {
+    @include text-color($color-text-light);
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+
+    
+  }
+}
+
+// Promotional Banner
+.promotional-banner {
+  .category,
+  .new-products {
+    @include box-shadow(rgba(110, 110, 110, 0.15), 1px, 3px, 8px);
+  }
+
+  .card-title {
+    border-bottom: 2px solid $bg-muted;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 4.125rem;
+      border-bottom: 2px solid $bg-accent-light;
+    }
+  }
+}
+
+// Category
+.category {
+  li {
+    border: 1px solid $bg-muted;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem !important;
+    border-radius: 0.5rem;
+  }
+
+  h6 {
+    @include flex-center;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+  }
+}
+
+// New Products
+.new-products {
+  i {
+    color: rgb(244, 218, 20);
+    font-size: small;
+  }
+
+  li {
+    border-bottom: 1px solid $bg-muted;
+
+    small {
+      @include text-color($color-text-light);
+      font-weight: 500;
+    }
+  }
+}
+
+// 🔥 Tags
+.tag-hot       { @include tag-style(#F74B81); }
+.tag-sale      { @include tag-style(#67BCEE); }
+.tag-new       { @include tag-style($bg-accent); }
+.tag-discount  { @include tag-style(#F59758); }
+
+// ⭐ Popular Products
+.popular-products {
+  .card {
+    border-radius: 15px;
+
+    img {
+      width: 9rem;
+    }
+  }
+
+  .product-name,
+  .rate {
+    font-size: small;
+  }
+
+  i {
+    color: rgb(244, 218, 20);
+    font-size: small;
+  }
+
+  button img {
+    width: 1rem !important;
+  }
+}
+
+// Banners
+.banner-1 {
+  background: url("../assets/images/banner-1.png.png") no-repeat center center / cover;
+}
+.banner-2 {
+  background: url("../assets/images/banner-2.png.png") no-repeat center center / cover;
+}
+.banner-3 {
+  background: url("../assets/images/banner-3.png.png") no-repeat center center / cover;
+}
+
+// Footer
+footer {
+  li {
+    margin-bottom: 0.6rem;
+
+    a {
+      font-size: small;
+    }
+  }
+
+  p {
+    font-size: small;
+  }
+}
+
+
+
+  @media (max-width: 767px) {
+    .border-bottom-sm {
+      border-bottom: 3px solid $bg-accent;
+      border-radius: 0;
+    }
+
+    .buttons{
+        border: none;
+    }
+  }

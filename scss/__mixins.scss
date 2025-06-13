@@ -1,0 +1,29 @@
+//  Mixins
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+@mixin text-color($color) {
+  color: $color;
+}
+
+@mixin bg-color($color) {
+  background: $color;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin box-shadow($color: rgba(0, 0, 0, 0.1), $x: 0, $y: 2px, $blur: 10px) {
+  box-shadow: $x $y $blur $color;
+}
+
+@mixin tag-style($bg-color) {
+  @include bg-color($bg-color);
+  color: #fff;
+  padding: 0.4rem 1.5rem;
+  border-radius: 15px 0 20px 0;
+}
